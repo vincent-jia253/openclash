@@ -9,4 +9,5 @@ payload:
   #科雷
   - DOMAIN-SUFFIX,kleientertainment.com
   - DOMAIN-SUFFIX,klei.com
-  
+
+  - DOMAIN-SUFFIX,bing.net
