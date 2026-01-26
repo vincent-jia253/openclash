@@ -6,6 +6,8 @@ payload:
 
   # python镜像地址
   - DOMAIN-SUFFIX,tsinghua.edu.cn
+  # python pypi.org文件下载
+  - DOMAIN,files.pythonhosted.org
 
   #科雷
   - DOMAIN-SUFFIX,kleientertainment.com
@@ -16,3 +18,4 @@ payload:
   - DOMAIN-SUFFIX,wireshark.org
   # docker镜像
   - DOMAIN,docker.xuanyuan.me
+  
