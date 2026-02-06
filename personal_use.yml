@@ -9,6 +9,9 @@ payload:
   # python pypi.org文件下载
   - DOMAIN,files.pythonhosted.org
 
+  # docker
+  -DOMAIN,hub.1panel.dev
+  
   #科雷
   - DOMAIN-SUFFIX,kleientertainment.com
   - DOMAIN-SUFFIX,klei.com
