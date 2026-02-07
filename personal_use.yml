@@ -17,6 +17,10 @@ payload:
   # wireshark
   - DOMAIN-SUFFIX,wireshark.org
   # docker镜像
+  - DOMAIN,docker.1ms.run
+  - DOMAIN,docker.1panel.live
+  - DOMAIN,docker.m.ixdev.cn
+  - DOMAIN,hub.rat.dev
   - DOMAIN,docker.xuanyuan.me
-  - DOMAIN,hub.1panel.dev
-  - DOMAIN,download.weakpass.com
+  - DOMAIN,hub1.nat.tf
+  - DOMAIN,hub2.nat.tf
