@@ -27,6 +27,7 @@ payload:
   - DOMAIN,hub.1panel.dev
   - DOMAIN,registry-1.docker.io
   - DOMAIN,production.cloudflare.docker.com
+  - DOMAIN,docker-0.unsee.tech
 
   #ubuntu
   - DOMAIN,releases.ubuntu.com
