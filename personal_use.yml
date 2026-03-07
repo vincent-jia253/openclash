@@ -28,6 +28,17 @@ payload:
   - DOMAIN,registry-1.docker.io
   - DOMAIN,production.cloudflare.docker.com
   - DOMAIN,docker-0.unsee.tech
-
+  - DOMAIN,hub.1panel.dev
+  - DOMAIN,docker-registry.nmqu.com
+  - DOMAIN,hub.amingg.com
+  - DOMAIN,docker.hlmirror.com
+  - DOMAIN,hub1.nat.tf
+  - DOMAIN,hub2.nat.tf
+  - DOMAIN,hub3.nat.tf
+  - DOMAIN,hub4.nat.tf
+  - DOMAIN,docker.kejilion.pro
+  - DOMAIN,docker.367231.xyz
+  - DOMAIN,dockerproxy.cool
+  - DOMAIN,proxy.vvvv.ee
   #ubuntu
   - DOMAIN,releases.ubuntu.com
