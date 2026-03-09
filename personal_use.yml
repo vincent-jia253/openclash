@@ -40,5 +40,7 @@ payload:
   - DOMAIN,docker.367231.xyz
   - DOMAIN,dockerproxy.cool
   - DOMAIN,proxy.vvvv.ee
+  - DOMAIN,image-mirror.r2.daocloud.vip
+  - DOMAIN,dockerproxy.net
   #ubuntu
   - DOMAIN,releases.ubuntu.com
