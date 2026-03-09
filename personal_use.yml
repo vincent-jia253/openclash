@@ -44,3 +44,5 @@ payload:
   - DOMAIN,dockerproxy.net
   #ubuntu
   - DOMAIN,releases.ubuntu.com
+
+  - DOMAIN,ph.limblimb.com
