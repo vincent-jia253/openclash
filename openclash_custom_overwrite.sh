@@ -127,15 +127,7 @@ for domain in $PROXY_DOMAINS; do
     fi
 done
 
-# --- 4. cloudflare 等关键词走代理 ---
-for kw in $PROXY_KEYWORDS; do
-    kw=$(echo "$kw" | tr -d '\r')
-    if [ -n "$kw" ]; then
-        ruby_arr_insert "$CONFIG_FILE" "['rules']" 0 "DOMAIN-KEYWORD,$kw,$PROXY_GROUP"
-    fi
-done
-
-# --- 5. PT 站 / Tracker 域名关键词直连，优先级较高 ---
+# --- 4. PT 站 / Tracker 域名关键词直连 ---
 for kw in $DIRECT_KEYWORDS; do
     kw=$(echo "$kw" | tr -d '\r')
     if [ -n "$kw" ]; then
@@ -143,7 +135,7 @@ for kw in $DIRECT_KEYWORDS; do
     fi
 done
 
-# --- 6. PT / Tracker IP 直连，优先级最高 ---
+# --- 5. PT / Tracker IP 直连 ---
 for ip in $DIRECT_IPS; do
     ip=$(echo "$ip" | tr -d '\r')
     if [ -n "$ip" ]; then
@@ -151,5 +143,14 @@ for ip in $DIRECT_IPS; do
     fi
 done
 
-LOG_OUT "Tip: 修复完成！PT/qB直连、Cloudflare代理、刮削加速规则均已生效。"
+# --- 6. Cloudflare 关键词代理，最高优先级 ---
+# 用于匹配 dash.cloudflare.com、api.cloudflare.com、cloudflare-dns.com 等
+for kw in $PROXY_KEYWORDS; do
+    kw=$(echo "$kw" | tr -d '\r')
+    if [ -n "$kw" ]; then
+        ruby_arr_insert "$CONFIG_FILE" "['rules']" 0 "DOMAIN-KEYWORD,$kw,$PROXY_GROUP"
+    fi
+done
+
+LOG_OUT "Tip: 修复完成！Cloudflare代理、PT/qB直连、刮削加速规则均已生效。"
 exit 0
